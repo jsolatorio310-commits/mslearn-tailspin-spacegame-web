@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  name: 'windows-latest'
+  vmImage: 'ubuntu-latest'  # Microsoft-hosted agent
   demands:
   - npm
 
