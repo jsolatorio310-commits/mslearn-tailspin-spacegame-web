@@ -128,9 +128,9 @@ stages:
     - group: 'Release'
     steps: 
     - task: UseDotNet@2
-      displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+      displayName: 'Use .NET SDK 6.x'
       inputs:
-        version: '$(dotnetSdkVersion)'
+        version: '6.x'
     - task: DotNetCoreCLI@2
       displayName: 'Build the project - $(buildConfiguration)'
       inputs:
