@@ -71,7 +71,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'AzureDevopsUpskill'
+      name: 'AzureDevopsUpskill'
     environment: dev
     variables:
     - group: Release
@@ -94,7 +94,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'AzureDevopsUpskill'
+      name: 'AzureDevopsUpskill'
     environment: test
     variables:
     - group: 'Release'
@@ -117,7 +117,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'AzureDevopsUpskill'
+      name: 'AzureDevopsUpskill'
     environment: staging
     variables:
     - group: 'Release'
